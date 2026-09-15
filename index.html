@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-HK" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一夜調酒師 · Y O'Clock Cocktail Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bar: {
+                            dark: '#050505',
+                            light: '#141414',
+                            accent: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    },
+                    backgroundImage: {
+                        'gold-gradient': 'linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%)',
+                        'dark-radial': 'radial-gradient(circle at center, #1a1a1a 0%, #050505 100%)',
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite alternate',
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '100%': { transform: 'translate(20px, -30px) scale(1.05)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #050505; color: #E0E0E0; overflow-x: hidden; }
+        
+        /* Typography Utilities */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #d4af37, #fcf6ba, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Ultra-Premium Glass Cards */
+        .glass-card {
+            background: rgba(20, 20, 20, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card-hover:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.08);
+            background: rgba(30, 30, 30, 0.6);
+        }
+
+        /* Scroll Animations */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Elegant Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+        
+        /* Section Divider */
+        .gold-divider {
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(to bottom, transparent, #d4af37, transparent);
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-[#d4af37] selection:text-black">
+
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none opacity-10">
+        <div class="absolute top-[10%] left-[5%] w-[40rem] h-[40rem] bg-amber-600 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
+        <div class="absolute bottom-[10%] right-[5%] w-[30rem] h-[30rem] bg-yellow-700 rounded-full mix-blend-screen filter blur-[120px] animate-blob" style="animation-delay: -5s;"></div>
+    </div>
+
+    <header class="relative min-h-[100dvh] flex items-center justify-center text-center px-6 z-10 bg-dark-radial">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop" alt="Bar Background" class="w-full h-full object-cover object-center opacity-40 filter grayscale-[30%]" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-bar-dark"></div>
+        </div>
+
+        <div class="max-w-5xl z-10 space-y-10 mt-12 animate-fade-in-up">
+            <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-white/10 bg-black/30 backdrop-blur-md mb-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#d4af37] animate-pulse-slow"></span>
+                <p class="text-gray-300 tracking-[0.3em] text-xs uppercase font-medium">Y O'Clock Presents</p>
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] text-white leading-[1.1] font-bold tracking-wider drop-shadow-2xl">
+                一夜調酒師 <br>
+                <span class="text-gradient-gold text-3xl md:text-5xl italic mt-6 block font-normal tracking-wide">專屬你的吧台微醺之夜</span>
+            </h1>
+            
+            <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-loose font-light tracking-wider">
+                走進尖沙咀質感隱世酒吧。不用死背酒譜，零經驗也能化身 Bartender，親手搖出寫著你名字的專屬雞尾酒。
+            </p>
+            
+            <div class="pt-12 flex flex-col items-center gap-8">
+                <a href="#pricing" class="group relative inline-flex items-center justify-center px-12 py-5 font-serif text-lg tracking-widest text-black bg-gold-gradient rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(212,175,55,0.3)]">
+                    <span class="relative z-10 font-bold uppercase">預約吧台位置</span>
+                    <div class="absolute inset-0 bg-white/30 transform -skew-x-12 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                </a>
+                
+                <div class="flex items-center gap-4 text-xs md:text-sm text-gray-500 tracking-[0.1em] uppercase font-light">
+                    <span>逢星期三 20:30 (平日場)</span>
+                    <span class="w-1 h-1 bg-gray-600 rounded-full"></span>
+                    <span>星期六 20:00 (週末黃金場)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-40">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <section class="py-32 px-6 max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-24 reveal">
+            <h2 class="font-serif text-3xl md:text-4xl text-white mb-6 tracking-wide">這不是一堂沉悶的理論課</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-base leading-loose font-light tracking-wide">這是一場沉浸式的感官體驗，我們打破傳統框架，<br class="hidden md:block">在真正的 Cocktail Bar 裡為你準備好一切：</p>
+            <div class="mt-12 gold-divider"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+            <!-- Feature 1 -->
+            <div class="glass-card glass-card-hover p-10 rounded-2xl reveal group text-center md:text-left">
+                <div class="text-3xl mb-8 opacity-80 group-hover:opacity-100 transition-opacity">🍸</div>
+                <h3 class="text-xl font-serif text-white mb-4 tracking-wider">真實酒吧體驗</h3>
+                <p class="text-gray-400 leading-loose font-light text-sm">告別白光管課室！在安靜、有質感的暗調酒吧內，享受微弱燈光與音樂帶來的真正 Chill 氛圍。</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="glass-card glass-card-hover p-10 rounded-2xl reveal group text-center md:text-left" style="transition-delay: 100ms;">
+                <div class="text-3xl mb-8 opacity-80 group-hover:opacity-100 transition-opacity">👨‍🏫</div>
+                <h3 class="text-xl font-serif text-white mb-4 tracking-wider">專業經理親授</h3>
+                <p class="text-gray-400 leading-loose font-light text-sm">由 Y O'Clock 首席酒吧經理親自帶領，手把手教你專業的 Shake 與 Build 技巧，保證學得會。</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="glass-card glass-card-hover p-10 rounded-2xl reveal group text-center md:text-left" style="transition-delay: 200ms;">
+                <div class="text-3xl mb-8 opacity-80 group-hover:opacity-100 transition-opacity">✨</div>
+                <h3 class="text-xl font-serif text-white mb-4 tracking-wider">安全零壓力</h3>
+                <p class="text-gray-400 leading-loose font-light text-sm">無需使用刀具，材料全預備。提供 Mocktail 零酒精選項，嚴控酒精份量，微醺不醉。</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="glass-card glass-card-hover p-10 rounded-2xl reveal group text-center md:text-left" style="transition-delay: 300ms;">
+                <div class="text-3xl mb-8 opacity-80 group-hover:opacity-100 transition-opacity">🍹</div>
+                <h3 class="text-xl font-serif text-white mb-4 tracking-wider">專屬 Signature</h3>
+                <p class="text-gray-400 leading-loose font-light text-sm">透過獨家「風味選擇卡」，經理為你調配比例，創作出百分百符合你口味的特調，並為它命名！</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 relative z-10 bg-[#0a0a0a]/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <h2 class="font-serif text-3xl md:text-4xl text-white mb-6 tracking-wide">3 小時微醺之旅</h2>
+                <p class="text-gradient-gold text-lg md:text-xl italic font-serif tracking-widest">晚飯後最完美的直落行程</p>
+                <div class="mt-12 gold-divider"></div>
+            </div>
+            
+            <div class="relative ml-4 md:ml-12 lg:ml-24">
+                <!-- Refined Glowing Line -->
+                <div class="absolute left-0 top-2 bottom-2 w-[1px] bg-gradient-to-b from-transparent via-[#d4af37]/40 to-transparent"></div>
+                
+                <div class="space-y-20 pl-12 md:pl-20">
+                    <div class="relative reveal group">
+                        <div class="absolute left-[-55px] md:left-[-87px] top-1.5 w-3 h-3 bg-bar-dark border-2 border-[#d4af37] rounded-full group-hover:bg-[#d4af37] group-hover:shadow-[0_0_15px_#d4af37] transition-all duration-300"></div>
+                        <div class="text-[#d4af37] font-sans text-xs font-bold mb-3 tracking-[0.2em] uppercase">Phase 01 / 首 15 分鐘</div>
+                        <h3 class="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-gray-200 transition-colors">Welcome & Chill</h3>
+                        <p class="text-gray-400 font-light leading-loose tracking-wide">帶著吃過晚飯的放鬆心情抵達。享用無酒精 Welcome Drink 及佐酒小食，安頓下來，聽聽雞尾酒基礎小知識。</p>
+                    </div>
+                    
+                    <div class="relative reveal group">
+                        <div class="absolute left-[-55px] md:left-[-87px] top-1.5 w-3 h-3 bg-bar-dark border-2 border-[#d4af37] rounded-full group-hover:bg-[#d4af37] group-hover:shadow-[0_0_15px_#d4af37] transition-all duration-300"></div>
+                        <div class="text-[#d4af37] font-sans text-xs font-bold mb-3 tracking-[0.2em] uppercase">Phase 02 / 第 30 分鐘</div>
+                        <h3 class="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-gray-200 transition-colors">Classic Demo & Tasting</h3>
+                        <p class="text-gray-400 font-light leading-loose tracking-wide">經理親身示範 3 款經典調酒，帶你品鑑小份量基酒的純粹，解構雞尾酒的酸甜平衡魔法，為實作打底。</p>
+                    </div>
+                    
+                    <div class="relative reveal group">
+                        <div class="absolute left-[-55px] md:left-[-87px] top-1.5 w-3 h-3 bg-bar-dark border-2 border-[#d4af37] rounded-full group-hover:bg-[#d4af37] group-hover:shadow-[0_0_15px_#d4af37] transition-all duration-300"></div>
+                        <div class="text-[#d4af37] font-sans text-xs font-bold mb-3 tracking-[0.2em] uppercase">Phase 03 / 第 60 分鐘</div>
+                        <h3 class="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-gray-200 transition-colors">Step Behind the Bar</h3>
+                        <p class="text-gray-400 font-light leading-loose tracking-wide">輪到你上場！走進真正的吧台，拿起 Shaker 與 Muddler，挑選一款經典雞尾酒親手製作，感受冰塊碰撞的節奏。</p>
+                    </div>
+                    
+                    <div class="relative reveal group">
+                        <div class="absolute left-[-55px] md:left-[-87px] top-1.5 w-3 h-3 bg-bar-dark border-2 border-[#d4af37] rounded-full group-hover:bg-[#d4af37] group-hover:shadow-[0_0_15px_#d4af37] transition-all duration-300"></div>
+                        <div class="text-[#d4af37] font-sans text-xs font-bold mb-3 tracking-[0.2em] uppercase">Phase 04 / 第 120 分鐘</div>
+                        <h3 class="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-gray-200 transition-colors">Create Your Signature</h3>
+                        <p class="text-gray-400 font-light leading-loose tracking-wide">填寫專屬風味卡。經理為你精準計算比例，讓你親自調配出一杯獨一無二、印有你名字的 Signature Cocktail！</p>
+                    </div>
+                    
+                    <div class="relative reveal group">
+                        <div class="absolute left-[-55px] md:left-[-87px] top-1.5 w-3 h-3 bg-bar-dark border-2 border-[#d4af37] rounded-full group-hover:bg-[#d4af37] group-hover:shadow-[0_0_15px_#d4af37] transition-all duration-300"></div>
+                        <div class="text-[#d4af37] font-sans text-xs font-bold mb-3 tracking-[0.2em] uppercase">Phase 05 / 第 165 分鐘</div>
+                        <h3 class="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-gray-200 transition-colors">Cheers & Memory</h3>
+                        <p class="text-gray-400 font-light leading-loose tracking-wide">為作品命名、拍照打卡。獲頒專屬配方紀錄卡，留下完美紀念，準備迎接美好的週末夜（星期六特設專屬轉場 After-Party）。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32 px-6 max-w-6xl mx-auto relative z-10">
+        <div class="text-center mb-24 reveal">
+            <h2 class="font-serif text-3xl md:text-4xl text-white mb-6 tracking-wide">預約專屬席位</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-base leading-loose font-light tracking-wide">我們堅持小班教學，確保每位客人得到充份指導。<br class="hidden md:block">先登記留位，達成團門檻後才發出付款通知，報名零壓力。</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 lg:gap-16 max-w-5xl mx-auto items-stretch">
+            <!-- Standard Ticket -->
+            <div class="glass-card p-12 rounded-2xl reveal flex flex-col h-full border border-white/5">
+                <h3 class="text-xl font-serif text-gray-200 mb-2 tracking-widest uppercase">Standard / 標準單人票</h3>
+                <div class="text-4xl font-serif text-white mb-10 mt-6 tracking-wide">HK$ 600 <span class="text-sm font-sans text-gray-500 font-light tracking-normal">/ 位</span></div>
+                
+                <ul class="text-gray-400 space-y-6 mb-12 flex-grow font-light text-sm tracking-wide leading-relaxed">
+                    <li class="flex items-start"><span class="text-gray-500 mr-4 font-serif">✦</span> 3 小時場地及專業指導</li>
+                    <li class="flex items-start"><span class="text-gray-500 mr-4 font-serif">✦</span> 全套專業調酒工具借用</li>
+                    <li class="flex items-start"><span class="text-gray-500 mr-4 font-serif">✦</span> 1 杯 Welcome Drink + 佐酒小食</li>
+                    <li class="flex items-start"><span class="text-gray-500 mr-4 font-serif">✦</span> 經典雞尾酒小份量品鑑</li>
+                    <li class="flex items-start"><span class="text-gray-500 mr-4 font-serif">✦</span> 親手製作 1 杯完整經典調酒</li>
+                    <li class="flex items-start"><span class="text-gray-500 mr-4 font-serif">✦</span> 親手製作 1 杯專屬 Signature Cocktail</li>
+                </ul>
+                <a href="https://wa.me/85259628198?text=你好，我想預留標準單人名額！" target="_blank" class="w-full py-4 text-center rounded-full border border-gray-600 text-gray-300 hover:bg-white/5 hover:border-gray-400 transition-all font-light tracking-widest text-sm uppercase">預留單人名額</a>
+            </div>
+            
+            <!-- VIP Ticket -->
+            <div class="relative p-[1px] rounded-2xl bg-gradient-to-b from-[#d4af37] via-[#aa771c] to-transparent reveal md:-translate-y-4 shadow-[0_20px_50px_rgba(212,175,55,0.15)]">
+                <div class="absolute top-0 right-10 transform -translate-y-1/2 bg-[#050505] text-[#d4af37] border border-[#d4af37] px-6 py-1.5 rounded-full text-xs font-bold tracking-[0.2em] uppercase shadow-xl z-20">Recommended</div>
+                
+                <div class="bg-[#111] h-full p-12 rounded-[15px] flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-[#d4af37]/5 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none"></div>
+                    
+                    <h3 class="text-xl font-serif text-[#d4af37] mb-2 relative z-10 tracking-widest uppercase">Duo / 雙人同行優惠</h3>
+                    <div class="text-5xl font-serif text-white mb-10 mt-6 relative z-10 tracking-wide">HK$ 580 <span class="text-sm font-sans text-gray-500 font-light tracking-normal">/ 位</span></div>
+                    
+                    <ul class="text-gray-300 space-y-6 mb-12 flex-grow font-light text-sm tracking-wide leading-relaxed relative z-10">
+                        <li class="flex items-start"><span class="text-[#d4af37] mr-4 font-serif">✦</span> <strong class="text-white font-normal mr-1">包含標準票所有內容</strong></li>
+                        <li class="flex items-start"><span class="text-[#d4af37] mr-4 font-serif">✦</span> 閨蜜小聚、情侶約會首選</li>
+                        <li class="flex items-start"><span class="text-[#d4af37] mr-4 font-serif">✦</span> 一同報名即可享有此優惠</li>
+                        <li class="flex items-start text-gray-400 mt-8 pt-6 border-t border-white/5"><span class="mr-4 opacity-50">✦</span> 週末場次極速滿額，建議提早 2 星期登記留位</li>
+                    </ul>
+                    <a href="https://wa.me/85259628198?text=你好，我想預留雙人同行優惠名額！" target="_blank" class="w-full py-4 text-center rounded-full bg-gold-gradient text-black font-bold hover:scale-[1.02] transition-transform shadow-[0_10px_30px_rgba(212,175,55,0.2)] relative z-10 text-sm tracking-widest uppercase">預留優惠名額</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-20 reveal">
+            <p class="text-gray-400 font-light tracking-wide text-sm leading-loose">
+                需要 10 人私人包場慶祝？享受完全專屬的尊貴空間。<br>
+                <a href="https://wa.me/85259628198?text=你好，我想查詢私人包場詳情！" target="_blank" class="text-[#d4af37] hover:text-white border-b border-[#d4af37]/30 hover:border-white pb-1 transition-all mt-4 inline-block tracking-widest uppercase text-xs">WhatsApp 查詢專屬安排 &rarr;</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto relative">
+            <div class="glass-card rounded-2xl p-10 md:p-16 overflow-hidden relative border-white/5">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/95 via-black/90 to-black/40"></div>
+                </div>
+                
+                <div class="relative z-10 md:w-3/4 reveal">
+                    <div class="text-[#d4af37] font-sans text-xs font-bold mb-4 tracking-[0.2em] uppercase">Exclusive Bonus</div>
+                    <h2 class="font-serif text-3xl md:text-4xl text-white mb-6 tracking-wide">課後專屬彩蛋：微醺才剛開始</h2>
+                    <p class="text-gray-400 font-light mb-12 text-base leading-loose tracking-wide">體驗結束後，我們為「畢業生」準備了專屬福利，讓你無縫延續快樂：</p>
+                    
+                    <div class="space-y-10">
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-sm shrink-0 mr-6 font-serif text-gray-400 group-hover:border-[#d4af37] group-hover:text-[#d4af37] transition-colors">01</div>
+                            <div>
+                                <h4 class="text-lg font-serif text-white mb-2 tracking-wider">Y O'Clock VIP Pass</h4>
+                                <p class="text-gray-400 text-sm font-light leading-loose tracking-wide">憑你今晚獲得的「專屬配方卡」，日後於正常營業時間再次光臨，全單即享 <span class="text-[#d4af37]">8 折優惠</span>。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start group">
+                            <div class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-sm shrink-0 mr-6 font-serif text-gray-400 group-hover:border-[#d4af37] group-hover:text-[#d4af37] transition-colors">02</div>
+                            <div>
+                                <h4 class="text-lg font-serif text-white mb-2 tracking-wider">即日轉場優惠 (週末限定)</h4>
+                                <p class="text-gray-400 text-sm font-light leading-loose tracking-wide">星期六場次教學結束後，歡迎留在場內專屬 After-Party 區域繼續 Chill 至午夜。憑參加者身分，即席加購飲品享專屬優惠。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 max-w-3xl mx-auto relative z-10 reveal">
+        <h2 class="font-serif text-2xl md:text-3xl text-center text-white mb-16 tracking-widest uppercase">Terms & Conditions</h2>
+        <div class="space-y-4">
+            <!-- Item 1 -->
+            <details class="glass-card rounded-xl border border-white/5 group cursor-pointer overflow-hidden transition-all bg-black/40">
+                <summary class="px-8 py-6 font-serif text-lg text-gray-200 flex justify-between items-center list-none [&::-webkit-details-marker]:hidden select-none hover:bg-white/5 tracking-wider">
+                    報名與收款安排
+                    <span class="text-gray-500 font-sans text-xl group-open:rotate-45 transition-transform duration-300 font-light">+</span>
+                </summary>
+                <div class="px-8 pb-8 text-gray-400 text-sm font-light leading-loose tracking-wide pt-2 border-t border-white/5 mx-8 mt-2">
+                    活動於舉行前 48 小時截止報名。本工作坊採「先留位，成團後收費」機制。當該場次達到 8 人最低門檻，我們將統一發出付款通知。客人需於收到通知後 24 小時內完成過數（PayMe/FPS），方可落實名額。逾期未付款者，名額將由候補名單補上。
+                </div>
+            </details>
+            <!-- Item 2 -->
+            <details class="glass-card rounded-xl border border-white/5 group cursor-pointer overflow-hidden transition-all bg-black/40">
+                <summary class="px-8 py-6 font-serif text-lg text-gray-200 flex justify-between items-center list-none [&::-webkit-details-marker]:hidden select-none hover:bg-white/5 tracking-wider">
+                    守時與退款政策
+                    <span class="text-gray-500 font-sans text-xl group-open:rotate-45 transition-transform duration-300 font-light">+</span>
+                </summary>
+                <div class="px-8 pb-8 text-gray-400 text-sm font-light leading-loose tracking-wide pt-2 border-t border-white/5 mx-8 mt-2">
+                    活動設有 15 分鐘緩衝期。為免影響全場進度，時間一到經理將立即開始教學，遲到客人恕不等待，遲到者將錯過前面環節且不設補堂或退款。門票一經付款確認，恕不退款。
+                </div>
+            </details>
+            <!-- Item 3 -->
+            <details class="glass-card rounded-xl border border-white/5 group cursor-pointer overflow-hidden transition-all bg-black/40">
+                <summary class="px-8 py-6 font-serif text-lg text-gray-200 flex justify-between items-center list-none [&::-webkit-details-marker]:hidden select-none hover:bg-white/5 tracking-wider">
+                    安全及場地規範
+                    <span class="text-gray-500 font-sans text-xl group-open:rotate-45 transition-transform duration-300 font-light">+</span>
+                </summary>
+                <div class="px-8 pb-8 text-gray-400 text-sm font-light leading-loose tracking-wide pt-2 border-t border-white/5 mx-8 mt-2">
+                    參加者必須年滿 18 歲。全程嚴禁參加者使用刀具（食材由店方預備）。根據牌照規定，所有酒精飲品僅限於室內範圍享用。如客人出現嚴重醉酒或違規，店方有權終止其參與且不作退款。
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <footer class="bg-[#020202] py-20 px-6 border-t border-white/5 text-center md:text-left relative z-10 mt-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+            <div class="md:col-span-1 flex flex-col items-center md:items-start">
+                <h3 class="text-2xl font-serif text-gray-300 mb-6 tracking-[0.2em] uppercase">Y O'Clock</h3>
+                <p class="text-gray-500 font-light text-xs mb-3 tracking-widest uppercase">📍 九龍尖沙咀棉登徑 7-9 號憙酒店 5 樓</p>
+                <p class="text-gray-500 font-light text-xs tracking-widest">📱 WhatsApp: +852 5962 8198</p>
+            </div>
+            
+            <div class="md:col-span-1 flex justify-center">
+                <!-- Decorative element -->
+                <div class="w-12 h-[1px] bg-gray-800"></div>
+            </div>
+            
+            <div class="md:col-span-1 md:text-right text-center">
+                <div class="text-[10px] text-gray-600 font-light tracking-[0.2em] uppercase leading-relaxed">
+                    &copy; 2026 Y O'Clock Cocktail Bar.<br>All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/85259628198?text=你好，我想查詢關於一夜調酒師工作坊的詳情！" target="_blank" class="fixed bottom-8 right-8 md:bottom-12 md:right-12 bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:bg-[#20ba56] hover:scale-110 transition-all duration-300 z-50 group flex items-center justify-center animate-pulse-slow">
+        <span class="absolute right-full mr-5 bg-[#111] border border-white/10 text-gray-300 text-xs tracking-wider px-4 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none hidden md:block shadow-2xl">
+            WhatsApp 查詢
+            <span class="absolute top-1/2 -right-1.5 transform -translate-y-1/2 border-t-[6px] border-t-transparent border-l-[6px] border-l-[#111] border-b-[6px] border-b-transparent"></span>
+        </span>
+        
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 120;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        setTimeout(reveal, 200);
+    </script>
+</body>
+</html>
