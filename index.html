@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 🌟 SEO 核心設定 (讓 Google 搜尋得到) -->
-    <meta name="description" content="香港尖沙咀 Y O'Clock 隱世地下酒吧呈獻：沉浸式調酒工作坊 (Cocktail Workshop)。親手調配專屬雞尾酒，體驗經典技法，零基礎新手首選約會/聚會活動。">
-    <meta name="keywords" content="cocktail workshop, 調酒工作坊, 調酒班, 香港調酒班, 尖沙咀好去處, 雞尾酒體驗, 週末活動, 情侶約會, Y O'Clock, speakeasy, mixology class">
+    <!-- 🌟 SEO 核心設定 -->
+    <meta name="description" content="香港尖沙咀 Y O'Clock 隱世地下酒吧呈獻：沉浸式調酒工作坊。1人即開班，親手調配專屬雞尾酒，體驗真實吧檯實戰！">
+    <meta name="keywords" content="cocktail workshop, 調酒工作坊, 調酒班, 香港調酒班, 尖沙咀好去處, Y O'Clock, speakeasy">
     <meta name="author" content="Y O'Clock">
     
-    <!-- 📱 社群分享預覽設定 (WhatsApp / IG / Facebook 貼連結時的圖卡) -->
+    <!-- 📱 社群分享預覽設定 -->
     <meta property="og:title" content="Y O'Clock | 一夜調酒師 Cocktail Workshop">
-    <meta property="og:description" content="推開隱世大門，走進專屬於您的微醺工坊。親手搖盪經典，創作專屬風味。">
+    <meta property="og:description" content="1人即開班！推開隱世大門，走進專屬於您的微醺工坊。親手搖盪經典，體驗真實吧檯實戰。">
     <meta property="og:image" content="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://yoclock-cocktailworkshop.com">
     <meta property="og:type" content="website">
 
-    <!-- 網站分頁小圖示 (Favicon) -->
-    <link rel="icon" type="image/png" href="logo.png">
+    <!-- 🌐 網站分頁小圖示 (Favicon) - 確保透明背景 -->
+    <link rel="icon" type="image/png" href="logo.png?v=2">
 
-    
-<!-- 網站分頁小圖示 (Favicon) -->
-    <link rel="icon" type="image/png" href="logo.png">
     <title>Y O'Clock | 沉浸式調酒工作坊 Mixology Workshop</title>
+    
+    <!-- Google Analytics 追蹤碼 (請替換 G-XXXXXXXXXX) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,27 +72,19 @@
             .timeline-dot::before { left: -31px; }
         }
     </style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-91RNFC933B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-91RNFC933B');
-</script>
 </head>
 <body class="font-sans antialiased">
 
     <!-- Hero Section -->
     <header class="relative min-h-[100dvh] flex items-center justify-center text-center px-6 z-10 overflow-hidden bg-black">
         <div class="absolute inset-0 z-0">
-            <!-- 高質感復古酒吧背景 -->
+            <!-- 恢復你原本的高質感背景圖片 -->
             <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Premium Speakeasy Bar" class="w-full h-full object-cover object-center opacity-40 mix-blend-lighten" />
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-dark-900/80 to-dark-950"></div>
         </div>
 
-        <div class="max-w-5xl z-10 space-y-8 mt-12">
+        <div class="max-w-5xl z-10 space-y-8 mt-12 flex flex-col items-center">
+            
             <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-gold-500/30 bg-black/80 backdrop-blur-md mb-2 shadow-[0_0_15px_rgba(212,175,55,0.15)]">
                 <i class="fa-solid fa-martini-glass text-gold-500 text-xs"></i>
                 <p class="text-gold-400 tracking-[0.3em] text-xs uppercase font-medium">Y O'Clock Speakeasy</p>
@@ -96,123 +95,136 @@
                 <span class="text-gradient-gold text-4xl md:text-6xl mt-6 block font-medium tracking-[0.15em] uppercase">Mixology Workshop</span>
             </h1>
             
-            <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-loose font-light tracking-wider mt-6 shadow-black drop-shadow-lg">
-                <span class="text-white font-medium">推開隱世大門，走進專屬於您的微醺工坊。</span><br>
-                拋開沉悶的單向教學，這是一場結合了經典技法與味覺創作的高級感官體驗。在專業調酒師的引導下，親手調配您的專屬故事，並帶走刻有您名字的專屬紀念。
+            <!-- 強調 1 人即可開班 -->
+            <div class="mt-4 animate-bounce">
+                <span class="inline-flex items-center justify-center px-6 py-2 border border-gold-500 bg-gold-500/20 text-white font-bold tracking-widest text-sm rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                    <i class="fa-solid fa-user-check text-gold-500 mr-2"></i> 破天荒門檻：1 人即可開班
+                </span>
+            </div>
+
+            <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-loose font-light tracking-wider mt-4 shadow-black drop-shadow-lg">
+                拋開沉悶的單向教學，這是一場結合了經典技法與真實吧檯實戰的高級感官體驗。在專業調酒師的引導下，親手調配您的專屬故事。
             </p>
             
-            <div class="pt-12 flex flex-col items-center gap-8">
+            <div class="pt-8 flex flex-col items-center gap-8">
                 <button onclick="document.getElementById('booking-section').scrollIntoView({behavior: 'smooth'})" class="group relative inline-flex items-center justify-center px-14 py-5 font-serif text-lg tracking-widest text-black bg-gold-gradient rounded-full hover:scale-105 transition-transform font-bold uppercase shadow-[0_0_30px_rgba(212,175,55,0.4)]">
                     查看方案與預約
                 </button>
                 
                 <div class="flex flex-wrap justify-center items-center gap-4 text-xs md:text-sm text-gray-400 tracking-[0.1em] font-light">
                     <span class="border border-white/10 px-4 py-1.5 rounded-full bg-black/70 backdrop-blur-sm"><i class="fa-solid fa-location-dot mr-1 text-gold-500"></i> 尖沙咀憙酒店 5F</span>
-                    <span class="border border-white/10 px-4 py-1.5 rounded-full bg-black/70 backdrop-blur-sm"><i class="fa-solid fa-users mr-1 text-gold-500"></i> 嚴格小班制</span>
-                    <span class="border border-white/10 px-4 py-1.5 rounded-full bg-black/70 backdrop-blur-sm"><i class="fa-solid fa-gift mr-1 text-gold-500"></i> 神秘專屬禮品</span>
+                    <span class="border border-white/10 px-4 py-1.5 rounded-full bg-black/70 backdrop-blur-sm"><i class="fa-solid fa-clock mr-1 text-gold-500"></i> 逢一至四、六開放</span>
+                    <span class="border border-white/10 px-4 py-1.5 rounded-full bg-black/70 backdrop-blur-sm"><i class="fa-solid fa-gift mr-1 text-gold-500"></i> 神秘專屬禮物</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- What's Included Section -->
-    <section class="py-24 px-6 max-w-7xl mx-auto relative z-10">
-        <div class="text-center mb-16">
-            <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 tracking-wider">極致感官旅程</h2>
-            <p class="text-gray-400 font-light tracking-wide text-sm">完整沉浸式體驗，絕無冷場，包含以下專屬環節</p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- 環節 1 -->
-            <div class="glass-card rounded-2xl overflow-hidden group">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Welcome Drink & Invitation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 to-transparent opacity-80"></div>
-                </div>
-                <div class="p-8 pt-4">
-                    <div class="text-xs text-gold-500 font-bold tracking-widest uppercase mb-2">Part I</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">迎賓特調與經典啟發</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">入座後開啟金邊邀請函，享用專屬 Welcome Drink。在輕鬆微醺的氣氛中探索經典調酒的歷史故事，為接下來的實作尋找創作靈感。</p>
-                </div>
-            </div>
+    <!-- 🌟 全新升級：兩大獨家賣點 -->
+    <section class="py-20 px-6 max-w-6xl mx-auto relative z-10 -mt-10">
+        <div class="grid md:grid-cols-2 gap-6">
             
-            <!-- 環節 2 -->
-            <div class="glass-card rounded-2xl overflow-hidden group">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bartender Shaking Cocktail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 to-transparent opacity-80"></div>
-                </div>
-                <div class="p-8 pt-4 relative z-10">
-                    <div class="text-xs text-gold-500 font-bold tracking-widest uppercase mb-2">Part II</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">經典技法實作</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">走進專業吧台，由調酒師一對一指導。您將親自使用 Shaker (搖盪) 或 Barspoon (攪拌)，完成 Mojito, White Lady 或 Manhattan 等經典名作。</p>
+            <!-- 賣點 1：真實吧檯實戰 -->
+            <div class="p-8 border border-gold-500/40 rounded-2xl bg-black/80 backdrop-blur-xl relative overflow-hidden group hover:border-gold-500 transition-colors duration-500 shadow-[0_10px_30px_rgba(212,175,55,0.1)]">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-gold-500/10 blur-[50px] rounded-full group-hover:bg-gold-500/20 transition-all duration-700"></div>
+                <h3 class="text-xl font-bold mb-4 text-gold-400 flex items-center gap-3 relative z-10 tracking-widest">
+                    <span class="text-2xl">🍸</span> 100% 真實吧檯實戰
+                </h3>
+                <p class="text-gray-300 text-sm leading-relaxed relative z-10 font-light">
+                    工作坊進行期間，酒吧將維持日常營業，對一般顧客開放。您將在充滿人聲與音樂的真實 Speakeasy 氛圍中學習！當氣氛合適時，<strong class="text-white font-medium">您甚至有機會親手為現場的真實顧客調製專屬 Shot！</strong> 體驗真正調酒師在吧檯後掌控全場的刺激與魅力。
+                </p>
+            </div>
+
+            <!-- 賣點 2：季刊主題制 -->
+            <div class="p-8 border-l-4 border-gold-500 rounded-r-2xl bg-gradient-to-r from-gold-900/30 to-black/80 backdrop-blur-xl flex flex-col justify-center">
+                <h3 class="text-xl font-bold mb-4 text-gold-400 flex items-center gap-3 tracking-widest">
+                    <span class="text-2xl">🗓️</span> 期間限定：季刊主題制
+                </h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-5 font-light">
+                    為保持每一次體驗的驚喜，我們<strong class="text-white font-medium">每三個月將更換全新酒單</strong> (未來將推出：7-11便利店創意調酒、水果季、茶香季等)。為慶祝首發，首三個月我們將回歸初心，帶來最原汁原味的經典，為您扎實打下調酒基礎！
+                </p>
+                <div class="self-start inline-flex items-center gap-2 px-4 py-2 bg-black/60 rounded-full text-gold-500 text-xs font-bold border border-gold-500/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] tracking-widest">
+                    <span class="animate-pulse">🔥</span> 本季限定：【經典之作 The Timeless Classics】
                 </div>
             </div>
-            
-            <!-- 環節 3 -->
-            <div class="glass-card rounded-2xl overflow-hidden relative group border-t-2 border-gold-500 shadow-[0_10px_30px_rgba(212,175,55,0.15)]">
-                <div class="absolute top-4 right-4 bg-gold-500 text-black text-[10px] font-bold px-3 py-1 rounded shadow-lg tracking-widest z-20">高潮環節</div>
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bespoke Creation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 to-transparent opacity-80"></div>
-                </div>
-                <div class="p-8 pt-4 relative z-10">
-                    <div class="text-xs text-gold-500 font-bold tracking-widest uppercase mb-2">Part III</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">專屬特調與神秘紀念</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">挑選 1 款基酒搭配 2-3 款專屬糖漿，創作代表您的風味。情侶更可體驗「二人共創」。活動尾聲，將獲贈刻有您名字的神秘專屬禮品。</p>
-                </div>
-            </div>
+
         </div>
     </section>
 
-    <!-- 工坊時間軸 (Workshop Schedule) -->
-    <section class="py-20 px-6 bg-dark-900 relative z-10 border-y border-white/5">
-        <div class="max-w-4xl mx-auto">
+    <!-- 極致感官旅程 (三欄照片卡片版) -->
+    <section class="py-24 px-6 bg-dark-950 relative z-10 border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 tracking-wider">工坊流程 (The Schedule)</h2>
-                <p class="text-gray-400 font-light tracking-wide text-sm">3 小時精心設計的分站式體驗，讓每一分鐘都充滿樂趣</p>
-                <!-- 加入明確的開始時間提示 -->
-                <p class="inline-block px-4 py-1.5 rounded-full border border-gold-500/30 bg-gold-900/20 text-gold-400 font-medium mt-6 text-sm tracking-widest">📍 星期三 20:00 準時開始 ｜ 星期六 20:30 準時開始</p>
+                <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 tracking-wider">極致感官旅程</h2>
+                <p class="text-gray-400 font-light tracking-wide text-sm mb-6">
+                    完整沉浸式體驗，絕無冷場，包含以下專屬環節。
+                </p>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <p class="inline-flex items-center px-5 py-2 rounded-full border border-gold-500/30 bg-gold-900/20 text-gold-400 font-medium text-sm tracking-widest shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                        <i class="fa-regular fa-clock mr-2"></i> 20:00 開始 (因應人數，長度保持彈性)
+                    </p>
+                    <p class="text-gray-500 text-xs tracking-widest font-light">* 即使只有 1 人預約，我們依然為您專屬開班 *</p>
+                </div>
             </div>
             
-            <div class="relative border-l border-gold-500/30 ml-6 md:ml-12 lg:mx-auto lg:w-2/3">
-                <!-- 第一階段 (改用相對時間) -->
-                <div class="mb-12 pl-8 md:pl-10 relative timeline-dot">
-                    <div class="text-gold-500 font-bold tracking-widest text-sm mb-1 font-sans">開場首 30 分鐘 (First 30 mins)</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">神秘迎賓 & 靈感啟發</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">入座享用 Welcome Drink 與佐酒小食。拆開桌上的「金邊邀請函」閱讀經典調酒歷史，在專業調酒師的引言下，為稍後的實作與創作揭開序幕。</p>
-                </div>
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
                 
-                <!-- 第二階段 (改用相對時間) -->
-                <div class="mb-12 pl-8 md:pl-10 relative timeline-dot">
-                    <div class="text-gold-500 font-bold tracking-widest text-sm mb-1 font-sans">第 30 - 105 分鐘 (75 mins)</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">分站式經典實作</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">輪流走入專業吧台，在導師指導下親自 Shake 一杯經典雞尾酒。等候期間絕不冷場，您可以在座位區填寫「專屬風味問卷」，或利用我們的打卡燈光拍攝剛完成的作品。</p>
+                <!-- PART 1 -->
+                <div class="glass-card rounded-xl overflow-hidden flex flex-col group border border-gold-500/20 bg-black/60">
+                    <div class="h-48 md:h-56 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Welcome Drink" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+                        <span class="text-gold-500 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-2 font-serif">Part I</span>
+                        <h3 class="text-lg md:text-xl font-bold text-white mb-3 tracking-wider">迎賓特調與經典啟發</h3>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed">
+                            入座後開啟金邊邀請函，享用專屬 Welcome Drink。在輕鬆微醺的氣氛中探索經典調酒的歷史故事，為接下來的實作尋找創作靈感。
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- 第三階段 (改用相對時間) -->
-                <div class="mb-12 pl-8 md:pl-10 relative timeline-dot">
-                    <div class="text-gold-500 font-bold tracking-widest text-sm mb-1 font-sans">第 105 - 165 分鐘 (60 mins)</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">解鎖專屬特調 (Customise Creation)</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">運用剛學會的技法，嚴格挑選 1 款基酒與 2-3 款糖漿，調配出屬於您的味道。同行伴侶更可選擇「二人共創」環節，共同完成一杯充滿愛意的作品。</p>
+
+                <!-- PART 2 -->
+                <div class="glass-card rounded-xl overflow-hidden flex flex-col group border border-gold-500/20 bg-black/60">
+                    <div class="h-48 md:h-56 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Classic Cocktail Making" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+                        <span class="text-gold-500 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-2 font-serif">Part II</span>
+                        <h3 class="text-lg md:text-xl font-bold text-white mb-3 tracking-wider">經典技法實作</h3>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed">
+                            走進專業吧台，由調酒師一對一指導。您將親自使用 Shaker (搖盪) 或 Barspoon (攪拌)，完成 Mojito, White Lady 或 Manhattan 等經典名作。
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- 第四階段 (改用相對時間) -->
-                <div class="pl-8 md:pl-10 relative timeline-dot">
-                    <div class="text-gold-500 font-bold tracking-widest text-sm mb-1 font-sans">最後 15 分鐘 (Last 15 mins)</div>
-                    <h3 class="text-xl font-serif text-white mb-2 tracking-wider">紀念與回味 (Souvenir & Aftermath)</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed">頒發早於 7 天前為您向廠商特別訂製的「神秘專屬刻名禮物」。享受最後的微醺時光，互相品嚐朋友的創作，並合照留下美好回憶。</p>
+
+                <!-- PART 3 -->
+                <div class="glass-card rounded-xl overflow-hidden flex flex-col group border border-gold-500/20 bg-black/60 relative">
+                    <div class="absolute top-4 right-4 z-20 bg-gold-gradient text-black text-[10px] font-bold px-3 py-1 rounded-full tracking-widest shadow-lg">高潮環節</div>
+                    <div class="h-48 md:h-56 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bespoke Cocktail" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col flex-grow relative">
+                        <span class="text-gold-500 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-2 font-serif">Part III</span>
+                        <h3 class="text-lg md:text-xl font-bold text-white mb-3 tracking-wider">專屬特調與神秘紀念</h3>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed">
+                            挑選 1 款基酒搭配專屬糖漿，創作代表您的風味。情侶更可體驗「二人共創」。活動尾聲，若氣氛熱烈，更有機會為現場顧客親手調製 Shot！
+                        </p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Booking Packages & Calendar Section -->
+    <!-- Booking Packages Section -->
     <section id="booking-section" class="py-24 px-6 max-w-5xl mx-auto relative z-10 scroll-mt-10">
         
         <div class="text-center mb-16">
             <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 tracking-wide">預約工坊 (Booking)</h2>
-            <p class="text-gray-400 font-light tracking-wide text-sm">請先點選方案，再於下方日曆選擇日期</p>
+            <p class="text-gray-400 font-light tracking-wide text-sm">請先點選方案，再於下方日曆選擇日期。<strong class="text-gold-500">1 人即可預約開班！最多容納 10 人。</strong></p>
         </div>
         
         <!-- Packages -->
@@ -223,10 +235,10 @@
                 <h3 class="text-lg font-serif text-gold-400 mb-2 tracking-widest uppercase relative z-10">單人體驗 (Standard)</h3>
                 <div class="text-3xl font-serif text-white mb-6 mt-2 tracking-wide relative z-10">HK$ 600 <span class="text-sm font-sans text-gray-500 font-light">/ 位</span></div>
                 <ul class="text-gray-300 space-y-3 mb-6 flex-grow font-light text-sm tracking-wide relative z-10">
-                    <li class="flex items-start">✦ 完整 3 小時場地及專業指導</li>
+                    <li class="flex items-start">✦ 完整分站式場地及專業指導</li>
                     <li class="flex items-start">✦ 迎賓特調 + 經典實作 + 專屬自創</li>
                     <li class="flex items-start">✦ 嚴格限制：基酒 1 款，糖漿 2-3 款</li>
-                    <li class="flex items-start text-gold-400 font-medium">✦ 獲贈「神秘專屬刻名禮物」</li>
+                    <li class="flex items-start text-gold-400 font-medium">✦ 獲贈「神秘專屬紀念禮品」</li>
                 </ul>
                 <div class="mt-6 relative z-10">
                     <button id="btn-single" class="w-full px-6 py-4 border border-gold-500 text-gold-500 font-bold uppercase tracking-widest text-[13px] rounded-lg transition-all duration-300 group-hover:bg-gold-500 group-hover:text-black shadow-[0_0_15px_rgba(212,175,55,0.1)] pointer-events-none">
@@ -245,7 +257,7 @@
                     <ul class="text-gray-300 space-y-3 mb-6 flex-grow font-light text-sm tracking-wide relative z-10">
                         <li class="flex items-start"><span class="text-gold-500 mr-2">✦</span> 包含所有單人體驗的頂級內容</li>
                         <li class="flex items-start"><span class="text-gold-500 mr-2">✦</span> <span class="text-white font-medium">解鎖「二人共創特調」浪漫互動環節</span></li>
-                        <li class="flex items-start"><span class="text-gold-500 mr-2">✦</span> 兩份神秘專屬刻名禮物</li>
+                        <li class="flex items-start"><span class="text-gold-500 mr-2">✦</span> 兩份神秘專屬紀念禮品</li>
                     </ul>
                     <div class="mt-6 relative z-10">
                         <button id="btn-duo" class="w-full px-6 py-4 bg-gold-gradient text-black font-bold uppercase tracking-widest text-[13px] rounded-lg transition-all duration-300 shadow-[0_5px_15px_rgba(212,175,55,0.3)] group-hover:brightness-110 pointer-events-none">
@@ -261,7 +273,7 @@
             <div class="text-center mb-8">
                 <h3 class="font-serif text-2xl md:text-3xl text-gold-500 mb-3 tracking-wide">預約日期表 (Availability)</h3>
                 <p class="text-gray-400 font-light tracking-wide text-sm">點選金色日期，系統將自動為您生成 WhatsApp 預約表單</p>
-                <p class="text-gold-500/70 text-xs mt-2 tracking-widest">⚠️ 為準備專屬刻名紀念品，報名嚴格於開班前 7 天截止</p>
+                <p class="text-gold-500/70 text-xs mt-2 tracking-widest">⚠️ 為準備新鮮材料與專屬紀念品，敬請提前預約保留席次</p>
             </div>
             
             <div class="glass-card p-4 md:p-10 rounded-2xl border border-gold-500/20 bg-dark-900/80">
@@ -274,89 +286,56 @@
 
                 <!-- Month Grids Container -->
                 <div class="relative min-h-[300px]">
+                    
                     <!-- October 2026 -->
                     <div id="month-10" class="month-grid">
                         <div class="grid grid-cols-7 gap-1 md:gap-4 text-center mb-4">
                             <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Sun</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Mon</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Tue</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Mon</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Tue</div>
                             <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Wed</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Thu</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Thu</div>
                             <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Fri</div>
                             <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Sat</div>
                         </div>
                         <div class="grid grid-cols-7 gap-1 md:gap-4 text-center text-sm">
+                            <!-- Week 1 -->
                             <div></div><div></div><div></div><div></div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">1</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">2</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">3</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">4</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">5</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">6</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月7日 (三)', '20:00 (平日夜間)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">7</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">8</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">9</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月10日 (六)', '20:30 (週末微醺)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">10</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">11</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">12</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">13</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月14日 (三)', '20:00 (平日夜間)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">14</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">15</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">16</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月17日 (六)', '20:30 (週末微醺)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">17</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">18</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">19</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">20</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月21日 (三)', '20:00 (平日夜間)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">21</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">22</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">23</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月24日 (六)', '20:30 (週末微醺)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">24</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">25</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">26</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">27</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月28日 (三)', '20:00 (平日夜間)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">28</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席</span>
-                            </button>
-                            
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">29</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40 flex items-center justify-center">30</div>
-                            
-                            <button onclick="openWhatsAppBooking('10月31日 (六)', '20:30 (週末微醺)')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group">
-                                <span class="font-bold text-sm md:text-lg leading-none mb-1">31</span>
-                                <span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 8 席 🎃</span>
-                            </button>
+                            <button onclick="openWhatsAppBooking('10月1日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">1</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">2</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月3日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">3</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <!-- Week 2 -->
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">4</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月5日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">5</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月6日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">6</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月7日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">7</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月8日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">8</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">9</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月10日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">10</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <!-- Week 3 -->
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">11</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月12日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">12</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月13日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">13</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月14日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">14</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月15日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">15</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">16</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月17日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">17</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <!-- Week 4 -->
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">18</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月19日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">19</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月20日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">20</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月21日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">21</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月22日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">22</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">23</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月24日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">24</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <!-- Week 5 -->
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">25</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月26日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">26</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月27日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">27</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月28日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">28</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('10月29日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">29</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">30</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('10月31日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">31</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
                         </div>
                     </div>
 
@@ -364,44 +343,48 @@
                     <div id="month-11" class="month-grid hidden">
                         <div class="grid grid-cols-7 gap-1 md:gap-4 text-center mb-4">
                             <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Sun</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Mon</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Tue</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Mon</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Tue</div>
                             <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Wed</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Thu</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Thu</div>
                             <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Fri</div>
                             <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Sat</div>
                         </div>
                         <div class="grid grid-cols-7 gap-1 md:gap-4 text-center text-sm">
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">1</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">2</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">3</div>
-                            <button onclick="openWhatsAppBooking('11月4日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">4</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">5</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">6</div>
-                            <button onclick="openWhatsAppBooking('11月7日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">7</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">8</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">9</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">10</div>
-                            <button onclick="openWhatsAppBooking('11月11日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">11</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">12</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">13</div>
-                            <button onclick="openWhatsAppBooking('11月14日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">14</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">15</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">16</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">17</div>
-                            <button onclick="openWhatsAppBooking('11月18日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">18</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">19</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">20</div>
-                            <button onclick="openWhatsAppBooking('11月21日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">21</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">22</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">23</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">24</div>
-                            <button onclick="openWhatsAppBooking('11月25日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">25</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">26</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">27</div>
-                            <button onclick="openWhatsAppBooking('11月28日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">28</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">29</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">30</div>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">1</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月2日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">2</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月3日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">3</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月4日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">4</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月5日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">5</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">6</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月7日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">7</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">8</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月9日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">9</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月10日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">10</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月11日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">11</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月12日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">12</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">13</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月14日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">14</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">15</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月16日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">16</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月17日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">17</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月18日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">18</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月19日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">19</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">20</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月21日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">21</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">22</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月23日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">23</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月24日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">24</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月25日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">25</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('11月26日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">26</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">27</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月28日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">28</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">29</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('11月30日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">30</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
                         </div>
                     </div>
 
@@ -409,53 +392,56 @@
                     <div id="month-12" class="month-grid hidden">
                         <div class="grid grid-cols-7 gap-1 md:gap-4 text-center mb-4">
                             <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Sun</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Mon</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Tue</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Mon</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Tue</div>
                             <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Wed</div>
-                            <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Thu</div>
+                            <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Thu</div>
                             <div class="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase font-medium">Fri</div>
                             <div class="text-gold-400 text-[10px] md:text-xs tracking-widest uppercase font-bold">Sat</div>
                         </div>
                         <div class="grid grid-cols-7 gap-1 md:gap-4 text-center text-sm">
                             <div></div><div></div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">1</div>
-                            <button onclick="openWhatsAppBooking('12月2日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">2</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">3</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">4</div>
-                            <button onclick="openWhatsAppBooking('12月5日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">5</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">6</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">7</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">8</div>
-                            <button onclick="openWhatsAppBooking('12月9日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">9</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">10</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">11</div>
-                            <button onclick="openWhatsAppBooking('12月12日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">12</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">13</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">14</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">15</div>
-                            <button onclick="openWhatsAppBooking('12月16日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">16</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">17</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">18</div>
-                            <button onclick="openWhatsAppBooking('12月19日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">19</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">20</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">21</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">22</div>
-                            <button onclick="openWhatsAppBooking('12月23日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">23</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">24</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">25</div>
-                            <button onclick="openWhatsAppBooking('12月26日 (六)', '20:30 (週末微醺)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">26</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">27</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">28</div>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">29</div>
-                            <button onclick="openWhatsAppBooking('12月30日 (三)', '20:00 (平日夜間)')" class="p-2 md:p-4 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 font-bold hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)]">30</button>
-                            <div class="p-2 md:p-4 rounded-lg text-gray-600 bg-black/40">31</div>
+                            <button onclick="openWhatsAppBooking('12月1日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">1</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月2日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">2</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月3日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">3</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">4</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月5日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">5</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">6</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月7日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">7</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月8日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">8</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月9日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">9</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月10日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">10</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">11</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月12日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">12</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">13</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月14日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">14</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月15日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">15</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月16日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">16</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月17日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">17</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">18</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月19日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">19</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">20</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月21日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">21</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月22日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">22</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月23日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">23</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月24日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">24</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">25</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月26日 (六)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">26</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            
+                            <div class="relative p-1 py-2 md:p-3 rounded-lg border border-gray-800/30 bg-black/40 text-gray-600 flex flex-col items-center justify-center cursor-not-allowed"><span class="font-bold text-sm md:text-lg leading-none mb-1 opacity-50">27</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gray-600 font-medium tracking-wider leading-none">休息日</span></div>
+                            <button onclick="openWhatsAppBooking('12月28日 (一)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">28</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月29日 (二)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">29</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月30日 (三)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">30</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
+                            <button onclick="openWhatsAppBooking('12月31日 (四)', '20:00')" class="relative p-1 py-2 md:p-3 rounded-lg border border-gold-500/50 bg-gold-900/20 text-gold-300 hover:bg-gold-600 hover:text-white hover:scale-105 transition-all shadow-[0_0_15px_rgba(212,175,55,0.15)] flex flex-col items-center justify-center group"><span class="font-bold text-sm md:text-lg leading-none mb-1">31</span><span class="text-[8px] md:text-[10px] whitespace-nowrap text-gold-500/70 group-hover:text-white font-medium tracking-wider leading-none">餘 10 席</span></button>
                         </div>
                     </div>
                 </div>
-                
-                <div class="mt-8 flex justify-center gap-6 text-sm text-gray-400">
+                <!-- Month Grids Container End -->
                     <span class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-gold-900/40 border border-gold-500"></div> 可預約 (點擊發送 WhatsApp)</span>
-                    <span class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-black/40 border border-gray-600/50"></div> 休息 / 額滿</span>
+                    <span class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-black/40 border border-gray-600/50"></div> 休息日</span>
                 </div>
             </div>
         </div>
@@ -471,35 +457,35 @@
         <div class="space-y-4">
             <details class="glass-card rounded-xl group">
                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white text-lg font-serif tracking-wide hover:text-gold-400 transition-colors">
-                    <span>我完全沒有調酒經驗，可以參加嗎？</span>
+                    <span>我只有一個人，可以報名嗎？</span>
                     <span class="transition group-open:rotate-180 text-gold-500">
                         <i class="fa-solid fa-chevron-down"></i>
                     </span>
                 </summary>
                 <div class="text-gray-300 mt-2 group-open:animate-fadeIn px-6 pb-6 font-light text-sm leading-relaxed border-t border-gold-500/20 pt-4">
-                    絕對可以！這是專為零基礎新手設計的精品體驗。我們的專業調酒師會親自一對一指導，從最基本的拿 Shaker 姿勢開始教起，確保您能優雅地調出大師級作品。
+                    絕對歡迎！為了讓每一位想體驗調酒的客人都能隨時前來，我們的門檻極低，1 人即可開班。您將在真實營業的酒吧氛圍中，享受專屬您的調酒時光。
                 </div>
             </details>
             <details class="glass-card rounded-xl group">
                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white text-lg font-serif tracking-wide hover:text-gold-400 transition-colors">
-                    <span>為什麼需要在活動前 7 天預約？</span>
+                    <span>什麼是「真實吧檯實戰」？</span>
                     <span class="transition group-open:rotate-180 text-gold-500">
                         <i class="fa-solid fa-chevron-down"></i>
                     </span>
                 </summary>
                 <div class="text-gray-300 mt-2 group-open:animate-fadeIn px-6 pb-6 font-light text-sm leading-relaxed border-t border-gold-500/20 pt-4">
-                    為了給您最尊貴的體驗，我們會在活動結束時贈送一份刻有「Y O'Clock + 您指定英文名 (Preferred Name)」的神秘專屬禮物。這份客製化禮物需要向合作廠商提前下單，因此報名嚴格於 7 天前截止。
+                    有別於一般封閉教室，我們的工作坊在酒吧營業期間進行。這代表您將沉浸在人聲與音樂的真實 Speakeasy 中，如果現場氣氛合適，甚至有機會親手將您調製的 Shot 送給現場其他顧客品嚐，體驗真正的調酒師日常。
                 </div>
             </details>
             <details class="glass-card rounded-xl group">
                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-white text-lg font-serif tracking-wide hover:text-gold-400 transition-colors">
-                    <span>我不喝酒，有 Mocktail 零酒精選項嗎？</span>
+                    <span>為什麼建議提前預約？</span>
                     <span class="transition group-open:rotate-180 text-gold-500">
                         <i class="fa-solid fa-chevron-down"></i>
                     </span>
                 </summary>
                 <div class="text-gray-300 mt-2 group-open:animate-fadeIn px-6 pb-6 font-light text-sm leading-relaxed border-t border-gold-500/20 pt-4">
-                    當然！我們的酒單完美支援「Mocktail 零酒精」需求。您依然可以使用蔓越莓汁、烏龍茶底和高級花果糖漿，親手搖盪出一杯層次豐富的無酒精特調。請在 WhatsApp 預約時註明即可。
+                    為了給您最完美的體驗，我們需要為每位學員提前準備新鮮的調酒食材與專屬的神秘紀念品，確保活動當日的流程與品質達到最高標準，因此強烈建議您盡早預約保留席次。
                 </div>
             </details>
         </div>
@@ -516,27 +502,22 @@
         function selectPackage(pkgName, cardId, btnId) {
             userSelectedPackage = pkgName;
             
-            // 1. 重置兩張卡片樣式
             document.getElementById('pkg-single').classList.remove('ring-2', 'ring-gold-500', 'bg-gold-500/10', 'border-gold-500');
             document.getElementById('pkg-duo').classList.remove('ring-2', 'ring-gold-500');
             
-            // 2. 重置按鈕
             document.getElementById('btn-single').innerHTML = '選擇方案並查看日曆 <i class="fa-solid fa-arrow-down ml-2 group-hover:animate-bounce"></i>';
             document.getElementById('btn-single').className = 'w-full px-6 py-4 border border-gold-500 text-gold-500 font-bold uppercase tracking-widest text-[13px] rounded-lg transition-all duration-300 group-hover:bg-gold-500 group-hover:text-black shadow-[0_0_15px_rgba(212,175,55,0.1)] pointer-events-none';
             
             document.getElementById('btn-duo').innerHTML = '選擇方案並查看日曆 <i class="fa-solid fa-arrow-down ml-2 group-hover:animate-bounce"></i>';
             document.getElementById('btn-duo').className = 'w-full px-6 py-4 bg-gold-gradient text-black font-bold uppercase tracking-widest text-[13px] rounded-lg transition-all duration-300 shadow-[0_5px_15px_rgba(212,175,55,0.3)] group-hover:brightness-110 pointer-events-none';
             
-            // 3. 點亮選中的卡片
             document.getElementById(cardId).classList.add('ring-2', 'ring-gold-500', 'border-gold-500');
             if(cardId === 'pkg-single') document.getElementById(cardId).classList.add('bg-gold-500/10');
             
-            // 4. 更改按鈕狀態
             const activeBtn = document.getElementById(btnId);
             activeBtn.innerHTML = '✅ 已選擇！請點擊下方日期';
             activeBtn.className = 'w-full px-6 py-4 bg-white text-black font-bold uppercase tracking-widest text-[13px] rounded-lg transition-all duration-300 pointer-events-none shadow-[0_0_20px_rgba(255,255,255,0.2)]';
             
-            // 5. 滾動到日曆
             document.getElementById('calendar-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
@@ -564,13 +545,12 @@
 🗓 日期：${dateStr}
 ⏰ 場次：${timeStr}
 
-👥 預約人數：____ 位
+👥 預約人數：____ 位 (1-10人)
 👤 代表姓名：________
-🎁 神秘禮物刻字 (Preferred Name)：________ (英文，每人一個)
 🥂 選擇方案：${finalPackageStr}
 ⚠️ 過敏/零酒精需求：無 / 有(請註明)
 
-*(為準備您的專屬刻名禮品，請填寫上方資料後發送，我們將盡快確認。)*`;
+*(為準備您的專屬禮品與材料，請填寫上方資料後發送，我們將盡快確認。)*`;
             
             const encodedText = encodeURIComponent(text);
             window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
